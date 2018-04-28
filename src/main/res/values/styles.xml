@@ -1,0 +1,21 @@
+<resources>
+    <!-- dialog样式, TakePicActivity -->
+    <!--<style name="dialog" parent="@android:style/Theme.Dialog">-->
+    <style name="dialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <!-- 普通灰色背景分割线View -->
+    <style name="normalGrayLineView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/whiteGray</item>
+    </style>
+
+</resources>

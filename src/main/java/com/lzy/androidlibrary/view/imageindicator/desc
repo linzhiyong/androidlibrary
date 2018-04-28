@@ -1,0 +1,54 @@
+
+    /////////////////////////////// 系统本地图片加载 //////////////////////////////////
+
+    <com.lzy.android.imageindicator.ImageIndicatorView
+        android:id="@+id/indicate_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.lzy.android.imageindicator.ImageIndicatorView>
+
+    //系统本地图片加载
+    public void local() {
+        // 声明一个数组, 指定图片的ID
+        final Integer[] resArray = new Integer[] {R.mipmap.a1, R.mipmap.a2,
+                    R.mipmap.a3, R.mipmap.a4};
+        // 把数组交给图片展播组件
+        indicate_view.setupLayoutByDrawable(resArray);
+        // 展播的风格
+//        indicate_view.setIndicateStyle(ImageIndicatorView.INDICATE_ARROW_ROUND_STYLE);
+        indicate_view.setIndicateStyle(ImageIndicatorView.INDICATE_USERGUIDE_STYLE);
+        // 显示组件
+        indicate_view.show();
+        final AutoPlayManager autoBrocastManager = new AutoPlayManager(indicate_view);
+        //设置开启自动广播
+        autoBrocastManager.setBroadcastEnable(true);
+        //autoBrocastManager.setBroadCastTimes(5);//loop times
+        //设置开始时间和间隔时间
+        autoBrocastManager.setBroadcastTimeIntevel(3000, 3000);
+        //设置循环播放
+        autoBrocastManager.loop();
+    }
+
+
+    ///////////////////////////////// 加载网络图片 ////////////////////////////////////////////////
+
+    <com.lzy.demo.NetworkImageIndicatorView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/internet_iv">
+    </com.lzy.demo.NetworkImageIndicatorView>
+
+    public void internet(){
+        final List<String> urlList= new ArrayList<String>();
+        urlList.add("http://r.photo.store.qq.com/psb?/V12kkHqD1CWRD4/1*CDpMdmLbUg.gga4PxHTxZUSZqZ1ei76FIDnprasXI!/r/dKEAAAAAAAAA");
+        urlList.add("http://r.photo.store.qq.com/psb?/V12kkHqD1CWRD4/40Y896PFEJ0ZdQyzrd0Nar48yCs5g9lkH3jI7zSRCQQ!/r/dKEAAAAAAAAA");
+        urlList.add("http://r.photo.store.qq.com/psb?/V12kkHqD1CWRD4/7oqQQKh5D5OKezdyC0geEGaTQjJirH8.GbQ9mY13aIY!/r/dKAAAAAAAAAA");
+        internet_iv.setupLayoutByImageUrl(urlList);
+        internet_iv.show();
+        //设置自动播放
+        AutoPlayManager autoBrocastManager =  new AutoPlayManager(internet_iv);
+        autoBrocastManager.setBroadcastEnable(true);
+        autoBrocastManager.setBroadCastTimes(5);//循环次数设置
+        autoBrocastManager.setBroadcastTimeIntevel(500, 500);
+        autoBrocastManager.loop();
+    }

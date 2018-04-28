@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--保持宽高比-->
+    <!--保持宽高比-->
+    <declare-styleable name="LClickMaskRatioImageView">
+        <attr name="ratio" format="float" />
+        <attr name="enableMask" format="boolean" />
+        <attr name="maskColor" format="color" />
+    </declare-styleable>
+
+    <!--圆形ImageView-->
+    <declare-styleable name="LCircleImageView">
+        <attr name="aBorderWidth" format="dimension"/>
+        <attr name="aBorderColor" format="color"/>
+    </declare-styleable>
+
+    <!--圆角ImageView-->
+    <declare-styleable name="LRoundImageView">
+        <attr name="radius" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="LStepView">
+        <attr name="lineheight" format="dimension"></attr>
+        <attr name="smallradius" format="dimension"></attr>
+        <attr name="largeradius" format="dimension"></attr>
+        <attr name="undonecolor" format="color"></attr>
+        <attr name="donecolor" format="color"></attr>
+        <attr name="totalstep" format="integer"></attr>
+        <attr name="completestep" format="integer"></attr>
+        <attr name="orientation" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="LClearEditText">
+        <attr name="clearSize" format="dimension"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="LRotateTextView">
+        <attr name="angle" format="integer"></attr>
+    </declare-styleable>
+
+    <declare-styleable name="LBottomNavigationBar">
+        <attr name="activeColor" format="color"></attr>
+        <attr name="unactiveColor" format="color"></attr>
+    </declare-styleable>
+
+</resources>

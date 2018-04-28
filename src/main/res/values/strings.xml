@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AndroidLibrary</string>
+    <string name="l_dialog_title">提示</string>
+    <string name="l_dialog_title_warning">警告</string>
+    <string name="l_dialog_title_error">错误</string>
+    <string name="l_dialog_confirm">确定</string>
+    <string name="l_dialog_cancel">取消</string>
+    <string name="scan">扫码</string>
+</resources>

@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="gesture-imageview">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/gesture-imageview.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

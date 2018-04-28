@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="jcore-1.1.6">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/bfef8cfb79fa6286486fdfd92aeaa45fba701cba/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/bfef8cfb79fa6286486fdfd92aeaa45fba701cba/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.jiguang.sdk/jcore/1.1.6/2047ec68467e68876fc6e4400c48f6af7af12375/jcore-1.1.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
