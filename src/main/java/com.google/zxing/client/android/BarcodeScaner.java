@@ -119,7 +119,7 @@ public class BarcodeScaner extends FrameLayout implements SurfaceHolder.Callback
 
     public void scan() {
         if(this.hasSurface) {
-            this.sendReplyMessage(com.haiyisoft.mobile.android.R.id.restart_preview, (Object)null, 1500L);
+            this.sendReplyMessage(com..mobile.android.R.id.restart_preview, (Object)null, 1500L);
         }
     }
 
@@ -261,7 +261,7 @@ public class BarcodeScaner extends FrameLayout implements SurfaceHolder.Callback
             }
 
             if(this.savedResultToShow != null) {
-                Message message = Message.obtain(this.handler, com.haiyisoft.mobile.android.R.id.decode_succeeded, this.savedResultToShow);
+                Message message = Message.obtain(this.handler, com..mobile.android.R.id.decode_succeeded, this.savedResultToShow);
                 this.handler.sendMessage(message);
             }
 
